@@ -11,6 +11,7 @@ sap.ui.define([
 				currency: "BRL"
 			});
 			this.getView().setModel(oViewModel, "view");
-		}
+		},
+		
 	});
 });
