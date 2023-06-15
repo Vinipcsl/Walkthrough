@@ -1,52 +1,42 @@
-{
-    "Invoices": [
-      {
-        "ProductName": "Iphones 11",
-        "Quantity": 21,
-        "ExtendedPrice": 2187,
-        "ShipperName": "Apple Inc.",
-        "ShippedDate": "2015-04-01T00:00:00",
-        "Status": "A"
-      },
-      {
-        "ProductName": "Redmi Note 12",
-        "Quantity": 20,
-        "ExtendedPrice": 1500,
-        "ShipperName": "Xiaomi",
-        "ShippedDate": "2015-02-18T00:00:00",
-        "Status": "A"
-      },
-      {
-        "ProductName": "POCO X5 ",
-        "Quantity": 9,
-        "ExtendedPrice": 2300,
-        "ShipperName": "Xiaomi",
-        "ShippedDate": "2015-03-02T00:00:00",
-        "Status": "B"
-      },
-      {
-        "ProductName": "Air buds",
-        "Quantity": 5,
-        "ExtendedPrice": 980.99,
-        "ShipperName": "Apple Inc.",
-        "ShippedDate": "2015-04-12T00:00:00",
-        "Status": "C"
-      },
-      {
-        "ProductName": "Air dots",
-        "Quantity": 3,
-        "ExtendedPrice": 160,
-        "ShipperName": "Xiaomi",
-        "ShippedDate": "2015-01-27T00:00:00",
-        "Status": "C"
-      },
-      {
-        "ProductName": "K12",
-        "Quantity": 5,
-        "ExtendedPrice": 650,
-        "ShipperName": "LG",
-        "ShippedDate": "2015-01-27T00:00:00",
-        "Status": "A"
-      }
-    ]
-  }
+[
+    {
+      "ProductName": "Pineapple",
+      "Quantity": 21,
+      "ExtendedPrice": 87.2,
+      "ShipperName": "Fun Inc.",
+      "ShippedDate": "2015-04-01T00:00:00",
+      "Status": "A"
+    },
+    {
+      "ProductName": "Milk",
+      "Quantity": 4,
+      "ExtendedPrice": 10,
+      "ShipperName": "ACME",
+      "ShippedDate": "2015-02-18T00:00:00",
+      "Status": "B"
+    },
+    {
+      "ProductName": "Canned Beans",
+      "Quantity": 3,
+      "ExtendedPrice": 6.85,
+      "ShipperName": "ACME",
+      "ShippedDate": "2015-03-02T00:00:00",
+      "Status": "B"
+    },
+    {
+      "ProductName": "Salad",
+      "Quantity": 2,
+      "ExtendedPrice": 8.8,
+      "ShipperName": "ACME",
+      "ShippedDate": "2015-04-12T00:00:00",
+      "Status": "C"
+    },
+    {
+      "ProductName": "Bread",
+      "Quantity": 1,
+      "ExtendedPrice": 2.71,
+      "ShipperName": "Fun Inc.",
+      "ShippedDate": "2015-01-27T00:00:00",
+      "Status": "A"
+    }
+  ]

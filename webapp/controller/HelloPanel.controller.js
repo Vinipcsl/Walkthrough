@@ -1,23 +1,17 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
-	"sap/m/MessageToast",
-	"sap/ui/core/Fragment"
-], function (Controller, MessageToast, Fragment) {
-	"use strict";
-
-	return Controller.extend("sap.ui.demo.walkthrough.controller.HelloPanel", {
-
-		onShowHello : function () {
-			// read msg from i18n model
-			var oBundle = this.getView().getModel("i18n").getResourceBundle();
-			var sRecipient = this.getView().getModel().getProperty("/recipient/name");
-			var sMsg = oBundle.getText("helloMsg", [sRecipient]);
-
-			// show message
-			MessageToast.show(sMsg);
-		},
-
-		onOpenDialog : function () {
+    "sap/ui/core/mvc/Controller",
+    "sap/m/MessageToast"
+ ], function (Controller, MessageToast) {
+    "use strict";
+    return Controller.extend("sap.ui.demo.walkthrough.controller.HelloPanel", {
+       onShowHello : function () {
+          var oBundle = this.getView().getModel("i18n").getResourceBundle();
+          var sRecipient = this.getView().getModel().getProperty("/recipient/name");
+          var sMsg = oBundle.getText("helloMsg", [sRecipient]);
+          MessageToast.show(sMsg);
+       },
+       onOpenDialog : function () {
+			var oView = this.getView();
 
 			if (!this.pDialog) {
 				this.pDialog = this.loadFragment({
@@ -28,12 +22,8 @@ sap.ui.define([
 				oDialog.open();
 			});
 		},
-
-		onCloseDialog : function () {
-			// note: We don't need to chain to the pDialog promise, since this event-handler
-			// is only called from within the loaded dialog itself.
+      onCloseDialog : function () {
 			this.byId("helloDialog").close();
 		}
-	});
-
-});
+    });
+ });  
